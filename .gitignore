@@ -1,0 +1,15 @@
+# no data
+
+# exclude everything
+output_dir/*
+pdb_structures/*
+sequence/*
+
+# exception to the rule
+!output_dir/.gitkeep
+!pdb_structures/.gitkeep
+!sequence/.gitkeep
+
+*.fasta
+*.gz
+*.swp
