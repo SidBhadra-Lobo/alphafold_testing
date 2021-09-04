@@ -8,7 +8,7 @@ pdb_structures/*
 # exception to the rule
 !output_dir/.gitkeep
 !pdb_structures/.gitkeep
-!sequences/.gitkeep
+#!sequences/.gitkeep
 
 *.fasta
 *.gz
