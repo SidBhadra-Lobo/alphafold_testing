@@ -3,12 +3,12 @@
 # exclude everything
 output_dir/*
 pdb_structures/*
-sequence/*
+#sequences/*
 
 # exception to the rule
 !output_dir/.gitkeep
 !pdb_structures/.gitkeep
-!sequence/.gitkeep
+!sequences/.gitkeep
 
 *.fasta
 *.gz
