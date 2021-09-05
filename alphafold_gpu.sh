@@ -3,7 +3,7 @@
 #SBATCH --partition=gpu              # Partition (job queue)
 ##SBATCH --partition=p_ccib_1         # tpu_driver errors
 #SBATCH --requeue                    # Return job to the queue if preempted
-#SBATCH --job-name=af_trlink         # Assign an short name to your job
+#SBATCH --job-name=af_linker         # Assign an short name to your job
 #SBATCH --nodes=1                    # Number of nodes you require
 #SBATCH --ntasks=8                   # Total # of tasks across all nodes
 #SBATCH --cpus-per-task=1            # Cores per task (>1 if multithread tasks)
@@ -29,7 +29,7 @@ singularity run -B $ALPHAFOLD_DATA_PATH:/data -B .:/etc --pwd /app/alphafold --n
     --template_mmcif_dir=/data/pdb_mmcif/mmcif_files/ \
     --obsolete_pdbs_path=/data/pdb_mmcif/obsolete.dat \
     --preset=full_dbs \
-    --fasta_paths=/home/sb1638/alphafold_testing/sequences/trimmedAla10_6WZO_dimer.fasta \
+    --fasta_paths=/home/sb1638/alphafold_testing/sequences/la10_6WZO_dimer.fasta \
     --output_dir=/home/sb1638/alphafold_testing/output_dir \
     --model_names=model_1,model_2,model_3,model_4,model_5 \
     --max_template_date=2020-05-14
