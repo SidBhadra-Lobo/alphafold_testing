@@ -1,15 +1,22 @@
 # no data
+msas/
+*.pkl
+*ranked_[1-9].pdb
+*relaxed_model[2-9].pdb
+*unrelaxed_model[2-9].pdb
+*.json
+
 
 # exclude everything
-output_dir/*
-pdb_structures/*
+#output_dir/*
+#pdb_structures/*
 #sequences/*
 
 # exception to the rule
-!output_dir/.gitkeep
-!pdb_structures/.gitkeep
+#!output_dir/.gitkeep
+#!pdb_structures/.gitkeep
 #!sequences/.gitkeep
 
 #*.fasta
-*.gz
-*.swp
+#*.gz
+#*.swp
