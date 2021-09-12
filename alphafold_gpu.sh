@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #SBATCH --partition=gpu              # Partition (job queue)
-##SBATCH --partition=p_ccib_1         # tpu_driver errors
 #SBATCH --requeue                    # Return job to the queue if preempted
 #SBATCH --job-name=af_linker         # Assign an short name to your job
 #SBATCH --nodes=1                    # Number of nodes you require
@@ -19,6 +18,9 @@ module use /projects/community/modulefiles
 module load singularity/3.6.4
 module load alphafold
 
+## change to your amarel username
+user=sb1638
+
 singularity run -B $ALPHAFOLD_DATA_PATH:/data -B .:/etc --pwd /app/alphafold --nv $CONTAINERDIR/alphafoldamarel_latest.sif \
     --data_dir=/data \
     --uniref90_database_path=/data/uniref90/uniref90.fasta \
@@ -29,7 +31,7 @@ singularity run -B $ALPHAFOLD_DATA_PATH:/data -B .:/etc --pwd /app/alphafold --n
     --template_mmcif_dir=/data/pdb_mmcif/mmcif_files/ \
     --obsolete_pdbs_path=/data/pdb_mmcif/obsolete.dat \
     --preset=full_dbs \
-    --fasta_paths=/home/sb1638/alphafold_testing/sequences/Ala10_6WZO_dimer.fasta \
-    --output_dir=/home/sb1638/alphafold_testing/output_dir \
-    --model_names=model_1,model_2,model_3,model_4,model_5 \
+    --fasta_paths=/home/$user/alphafold_testing/sequences/Ala10_6WZO_dimer.fasta \
+    --output_dir=/home/$user/alphafold_testing/output_dir \
+    --model_names=model_1 \
     --max_template_date=2020-05-14
