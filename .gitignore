@@ -1,9 +1,9 @@
 # no data
 msas/
 *.pkl
-*ranked_[1-9].pdb
-*relaxed_model[2-9].pdb
-*unrelaxed_model[2-9].pdb
+ranked_[1-4].pdb
+relaxed_model_[2-5].pdb
+unrelaxed_model_[2-5].pdb
 *.json
 
 
