@@ -6,6 +6,13 @@ relaxed_model_[2-5].pdb
 unrelaxed_model_[2-5].pdb
 *.json
 
+# no alphafold logs
+*.cache
+*localtime
+
+#no slurm logs
+*.err
+*.out
 
 # exclude everything
 #output_dir/*
