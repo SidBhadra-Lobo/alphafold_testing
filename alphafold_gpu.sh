@@ -31,7 +31,7 @@ singularity run -B $ALPHAFOLD_DATA_PATH:/data -B .:/etc --pwd /app/alphafold --n
     --template_mmcif_dir=/data/pdb_mmcif/mmcif_files/ \
     --obsolete_pdbs_path=/data/pdb_mmcif/obsolete.dat \
     --preset=full_dbs \
-    --fasta_paths=/home/$user/alphafold_testing/sequences/Ala10_6WZO_dimer.fasta \
+    --fasta_paths=/home/$user/alphafold_testing/sequences/trimmed6WZO_monomer.fasta \
     --output_dir=/home/$user/alphafold_testing/output_dir \
     --model_names=model_1 \
     --max_template_date=2020-05-14
