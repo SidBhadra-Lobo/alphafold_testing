@@ -14,17 +14,5 @@ unrelaxed_model_[2-5].pdb
 *.err
 *.out
 
-# exclude everything
-#output_dir/*
-#pdb_structures/*
-#sequences/*
-
-# exception to the rule
-#!output_dir/.gitkeep
-#!pdb_structures/.gitkeep
-#!sequences/.gitkeep
-
-#*.fasta
-#*.gz
-#*.swp
+# no personal scripts
 pymol_scripts/*
