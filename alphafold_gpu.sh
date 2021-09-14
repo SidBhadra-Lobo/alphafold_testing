@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Original author: Paul Guillermo Arias, Ph.D.
+#                  Senior Scientist, Office of Advanced Research Computing
+#                  Rutgers, the State University of New Jersey
+
 #SBATCH --partition=gpu              # Partition (job queue)
 #SBATCH --requeue                    # Return job to the queue if preempted
 #SBATCH --job-name=af_linker         # Assign an short name to your job
