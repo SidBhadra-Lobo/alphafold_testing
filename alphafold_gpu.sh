@@ -22,7 +22,7 @@ module use /projects/community/modulefiles
 module load singularity/3.6.4
 module load alphafold
 
-## change to your amarel username
+## change to your amarel user ID
 user=sb1638
 
 singularity run -B $ALPHAFOLD_DATA_PATH:/data -B .:/etc --pwd /app/alphafold --nv $CONTAINERDIR/alphafoldamarel_latest.sif \
