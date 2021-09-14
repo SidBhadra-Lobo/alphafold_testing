@@ -11,6 +11,7 @@ unrelaxed_model_[2-5].pdb
 *localtime
 
 #no slurm logs
+slurm_log/
 *.err
 *.out
 
