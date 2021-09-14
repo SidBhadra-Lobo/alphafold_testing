@@ -17,3 +17,6 @@ slurm_log/
 
 # no personal scripts
 pymol_scripts/*
+
+# no pymol session files
+*.pse
