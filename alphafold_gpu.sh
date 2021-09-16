@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Original author: Paul Guillermo Arias, Ph.D.
-#                  Senior Scientist, Office of Advanced Research Computing
+# Original author: Paul Guillermo Arias, Ph.D. and Vlad Kholodovych, Ph.D.
+#                  Senior Scientists, Office of Advanced Research Computing
 #                  Rutgers, the State University of New Jersey
 
 #SBATCH --partition=gpu              # Partition (job queue)
@@ -35,7 +35,7 @@ singularity run -B $ALPHAFOLD_DATA_PATH:/data -B .:/etc --pwd /app/alphafold --n
     --template_mmcif_dir=/data/pdb_mmcif/mmcif_files/ \
     --obsolete_pdbs_path=/data/pdb_mmcif/obsolete.dat \
     --preset=full_dbs \
-    --fasta_paths=/home/$user/alphafold_testing/sequences/nolinker_6WZO_dimer.fasta \
+    --fasta_paths=/home/$user/alphafold_testing/sequences/Gly20_7CAH_trimer.fasta \
     --output_dir=/home/$user/alphafold_testing/output_dir \
     --model_names=model_1 \
     --max_template_date=2020-05-14
