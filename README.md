@@ -13,3 +13,5 @@ These predictions are compared to the single reference structure in `/pdb_struct
 - no linker fasta, dimer folding + docking
 - trimmed fasta with 10 Alanine linker, dimer folding + docking
 - trimmed fasta with 50 Alanine linker, dimer folding + docking
+
+Load `session_aligned_structures.pse` into PyMol to see already aligned folding and docking predictions for all *.fasta variants tested.
